@@ -1,0 +1,157 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size:1em;
+    background-color: #F3F5FC;
+    width: 95vw;
+    height: 95vh;
+   
+}
+
+.encriptador{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*---------------fnc-encriptador------------------*/
+
+.fnc-encriptador{
+    width:75%;
+    height: 96%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.cont-logo{
+    float: left;
+    width:5%;
+    height: 10%;
+}
+
+.cont-logo img{
+    width: 90%;
+}
+
+
+.fnc-encriptador form{
+    width:70%;
+    height: 80%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*-------form------*/
+.fnc-encriptador form div{
+    height: 50%;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+.fnc-encriptador input{
+   width: 75%;
+   height: 12%;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   margin-left: 5%;
+   margin-right: 20%;
+   font-size: 1em;
+   font-weight: 400;
+
+}
+.cont-buttons{
+    box-sizing: border-box;
+    padding-top:20%;
+}
+
+.info{
+    padding-top: 4%;
+    font-size:0.6em;
+    box-sizing: border-box;
+}
+
+.info img{
+    height: 8px;
+    display: inline-block;
+}
+.info span{
+    display: inline-block;
+}
+
+.cont-buttons button{
+    border: 1px solid blue;
+    color: #FFFFFF;
+    width: 40%;
+    height: 45%;
+    margin-left: 5%;
+    border-radius: 24px;
+}
+.cont-buttons button:nth-child(1){
+    background-color: #0A3871;
+}
+
+.cont-buttons button:nth-child(2){
+    fill: solid;
+    background-color: #D8DFE8;
+    
+}
+
+/*-----------------*/
+
+
+
+/*---------------------------------*/
+
+
+/*---------------vst-encriptador------------------*/
+
+.vst-encriptador{
+    box-sizing: border-box;
+    width:25%;
+    background-color: #FFFFFF;
+    height:96%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 32px;
+    padding-top: 15%;
+}
+
+.cont-fig{
+    height: 50%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-fig img{
+    width: 100%;
+    height: 100%;
+}
+
+.cont-text{
+    height:50;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cont-text div:nth-child(2){
+    font-size:0.7em;
+}
+
+/*---------------------------------*/
