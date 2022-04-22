@@ -15,9 +15,9 @@
                 <div class="cont-logo">
                     <h1><img src="src/img/Vector.png" alt=""></h1>
                 </div>
-                <form action="">
+                <form method="post" id="formulario">
                     <div>
-                        <input type="text" placeholder="Ingrese el texto">
+                        <input type="text" placeholder="Ingrese el texto" name="texto">
                     </div>
                     <div class="cont-buttons">
                         <div class="info">
@@ -26,24 +26,36 @@
                                  Solo letras minusculas y sin acento
                             </span>
                         </div>
-                        <button>Encriptar</button>
-                        <button>Desencriptar</button>
+                        <button type="submit" id="btn-encriptador">Encriptar</button>
+                        <button type="submit" id="btn-desencriptador">Desencriptar</button>
                     </div>
                 </form>
         </section>
         <section class="vst-encriptador">
-            <div class="cont-fig">
-                <img src="src/img/Muñeco.svg" alt="">
-            </div>
-            <div class="cont-text">
-                <div>
-                    <p>Ningun Mensaje fue encontrado</p>
+            <div id="cont-figura">
+                <div class="cont-fig">
+                    <img src="src/img/Muñeco.svg" alt="">
                 </div>
-                <div>
-                    <p>Ingrese el texto a encriptar o descencriptar</p>
+                <div class="cont-text">
+                    <div>
+                        <p>Ningun Mensaje fue encontrado</p>
+                    </div>
+                    <div>
+                        <p>Ingrese el texto a encriptar o descencriptar</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cont-text">
+                <div class="cont-mostrar-text">
+                    <p id="mostrar-text"></p>
+                </div>
+                <div class="cont-btn-copiar">
+                    <button class="btn-copiar">Copiar</button>
                 </div>
             </div>
         </section>
     </div>
+    <script type="text/javascript" src="src/js/elements.js"></script>
+    <script type="text/javascript" src="src/js/encriptador.js"></script>
 </body>
 </html>

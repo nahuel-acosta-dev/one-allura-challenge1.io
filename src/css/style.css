@@ -154,4 +154,35 @@ body{
     font-size:0.7em;
 }
 
+#cont-text{
+    height: 100%;
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+}
+
+.cont-mostrar-text{
+    height: 85%;
+    word-wrap: word-break;
+}
+.mostrar-text{
+    height: 100%;
+}
+
+.cont-btn-copiar{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end; display: flex;
+
+}
+
+.btn-copiar{
+    width: 90%;
+    height: 2em;
+    background-color: #9ad5da;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 /*---------------------------------*/
