@@ -1,188 +1,560 @@
+/*-------------conf inicial-----------*/
+
 html{
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 body{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size:1em;
-    background-color: #F3F5FC;
-    width: 95vw;
-    height: 95vh;
-   
+    font-weight:100;
+    background-color: #EFF1FA;
+    width: 100vw;
+    height:100vh;
 }
 
-.encriptador{
-    width:100%;
-    height: 100%;
+* { 
+    margin: 0;
+    padding: 0;
+    /*box-sizing: content-box;*/
+}
+
+.container{
+    margin:0px auto;
     display: flex;
     align-items: center;
 }
 
-/*---------------fnc-encriptador------------------*/
-
-.fnc-encriptador{
-    width:75%;
-    height: 96%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: transparent;
-    padding-left: 5%;
-    padding-right: 5%;
-    
+header{
+    height: 15vh;
+    width: 100%;
 }
 
+section{
+    height: 85vh;
+}
+
+section:nth-child(1){
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-child(2){
+    width: 25%;
+}
+
+/*-------------------------------*/
+
+
+/*---------header-----------*/
 .cont-logo{
-    float: left;
-    width:5%;
-    height: 10%;
+    width: 60px;
+    height: 100%;
+    margin-left: 60px;
+    display:flex;
+    align-items:end;
+    justify-content:center;
 }
 
 .cont-logo img{
+    width: 80%;
+}
+
+textarea{
+    border: none;
+    background: none;
+    text-decoration: none;
+    resize:none;
+    outline:none;
+}
+
+/*-------------------------------*/
+
+
+/*---------fnc-encriptador-----------*/
+
+.cont-form{
     width: 90%;
+    height: 90%;
+}
+
+.cont-textarea{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea1{
+    width: 60%;
+    height: 80%;
+    font-size: 1.5em;
+}
+
+.cont-info{
+    height: 10%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+}
+
+.cont-info span{
+    font-size: 0.6em;
 }
 
 
-.fnc-encriptador form{
-    width:70%;
+
+.cont-buttons{
+    height: 14%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: start;
+}
+
+.cont-button1, .cont-info1{
+    width: 40%;
     height: 80%;
-    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
-/*-------form------*/
-.fnc-encriptador form div{
-    height: 50%;
-    padding-left:5%;
-    padding-right: 5%;
+.cont-button2{
+    background-color: transparent;
 }
 
-.fnc-encriptador input{
-   width: 75%;
-   height: 12%;
-   background-color: transparent;
-   border: none;
-   outline: none;
-   margin-left: 5%;
-   margin-right: 20%;
-   font-size: 1em;
-   font-weight: 400;
-
+.cont-info1{
+    display: flex;
+    align-items: end;
+    margin-bottom: 5px;
 }
-.cont-buttons{
-    box-sizing: border-box;
-    padding-top:20%;
-}
-
-.info{
-    padding-top: 4%;
-    font-size:0.6em;
-    box-sizing: border-box;
-}
-
-.info img{
-    height: 8px;
-    display: inline-block;
-}
-.info span{
-    display: inline-block;
-}
-
-.cont-buttons button{
+.btn{
+    width: 100%;
+    height: 100%;
     border: 1px solid blue;
     color: #FFFFFF;
-    width: 40%;
-    height: 45%;
-    margin-left: 5%;
     border-radius: 24px;
 }
-.cont-buttons button:nth-child(1){
+
+.btn1{
     background-color: #0A3871;
 }
 
-.cont-buttons button:nth-child(2){
+.btn1:active{
+    background-color: #609ED4;
+}
+
+.btn2{
     fill: solid;
-    background-color: #D8DFE8;
+    background-color: #AAB2D5;
     
 }
 
-/*-----------------*/
+.btn2:active{
+    fill: solid;
+    background-color: #CED4DA;
+    
+}
+
+.cont-button2, .cont-info2{
+    width: 40%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-info2{
+    background-color: transparent;
+}
 
 
 
-/*---------------------------------*/
+/*-------------------------------*/
 
 
-/*---------------vst-encriptador------------------*/
-
+/*---------vst-encriptador-----------*/
 .vst-encriptador{
-    box-sizing: border-box;
-    width:25%;
-    background-color: #FFFFFF;
-    height:96%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 32px;
-    padding-top: 15%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
-
-.cont-fig{
-    height: 50%;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cont-fig img{
-    width: 100%;
-    height: 100%;
-}
-
-.cont-text{
-    height:50;
-    width:80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.9em;
-    font-weight: 700;
-    text-align: center;
-}
-
-.cont-text div:nth-child(2){
-    font-size:0.7em;
-}
-
-#cont-text{
-    height: 100%;
-    width: 90%;
-    padding: 5%;
-    text-align: center;
-}
-
-.cont-mostrar-text{
-    height: 85%;
-    word-wrap: word-break;
-}
-.mostrar-text{
-    height: 100%;
-}
-
-.cont-btn-copiar{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: flex-end; display: flex;
-
-}
-
-.btn-copiar{
-    width: 90%;
-    height: 2em;
-    background-color: #9ad5da;
-    border: 1px solid black;
+.cont-vst-enc{
+    background-color: white;
+    width: 85%;
+    height: 95%;
+    border: 2px solid white;
+    box-shadow: 4px 5px 5px 5px gray;
     border-radius: 10px;
 }
 
-/*---------------------------------*/
+/*-----------vst1-------------*/
+.cont-figura{
+    height: 65%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.cont-figura img{
+    height: 70%;
+}
+
+
+.cont-text{
+    height: 35%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.text2{
+    font-size:0.7em;
+}
+
+.cont-vst1{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*----------------------------*/
+
+/*-----------vst2-------------*/
+.cont-vst2{
+    height: 100%;
+    width: 100%;
+}
+
+.cont-textarea2{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+
+.textarea2{
+    width: 100%;
+    height: 95%;
+}
+
+.cont-copy{
+    height: 10%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-copy{
+    height: 80%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: transparent;
+}
+
+.btn-copy:active{
+    background-color: #9ad5da;
+
+}
+
+.cont-vst2{
+    display: none;
+}
+/*----------------------------*/
+
+/*-------------------------------*/
+
+
+/*--------------Responsive-----------------*/
+
+@media all and (min-width: 576px) and (max-width: 992px){
+    /*-------------conf inicial-----------*/
+
+body{
+    width: 100vw;
+    height:100vh;
+}
+
+.container{
+    display: inline-block;
+}
+
+header{
+    height: 15vh;
+    width: 100%;
+}
+
+section:nth-child(1){
+    width: 100vw;
+    height: 60vh;
+}
+
+section:nth-child(2){
+    width: 100vw;
+    height: 25vh;
+}
+
+/*-------------------------------*/
+
+/*---------fnc-encriptador-----------*/
+
+.cont-form{
+    background-color: pink;
+    width: 90%;
+    height: 90%;
+}
+
+.textarea1{
+    width: 60%;
+    height: 80%;
+    font-size: 1em;
+}
+
+.cont-buttons{
+    height: 20%;
+}
+
+/*-------------------------------*/
+
+/*---------vst-encriptador-----------*/
+.vst-encriptador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-vst-enc{
+    width: 85%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------vst1-------------*/
+.cont-figura{
+    display: none;
+}
+
+
+.cont-text{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+}
+
+p,span{
+    margin-top: 3.5%;
+}
+
+.cont-vst1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-vst1{
+    /*display: none;*/
+}
+/*----------------------------*/
+
+/*-----------vst2-------------*/
+.cont-vst2{
+    height: 96%;
+    width: 100%;
+}
+
+.cont-textarea2{
+    height: 80%;
+    width: 90%;
+}
+
+.cont-copy{
+    height: 20%;
+    width: 90%;
+}
+
+.cont-vst2{
+    display: none;
+}
+/*----------------------------*/
+
+/*-------------------------------*/
+}
+
+@media all and (max-width: 575px){
+
+    body{
+        width: 100vw;
+        height:100vh;
+    }
+    
+    .container{
+        display: inline-block;
+    }
+    
+    header{
+        height: 14.9vh;
+        width: 100%;
+    }
+    
+    section:nth-child(1){
+        width: 100vw;
+        height: 60vh;
+    }
+    
+    section:nth-child(2){
+        width: 100vw;
+        height: 25vh;
+    }
+    
+    /*-------------------------------*/
+    
+    /*---------fnc-encriptador-----------*/
+    
+    .cont-form{
+        background-color: pink;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .textarea1{
+        width: 90%;
+        height: 90%;
+        font-size: 1em;
+    }
+    
+    .cont-buttons{
+
+        height: 39%;
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        align-items: start;
+    }
+
+    .cont-textarea{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cont-info{
+        height: 10%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: end;
+    }
+    
+    .cont-info1{
+        width: 90%;
+    }
+    
+    .cont-button1 {
+        width: 90%;
+        height: 40%;
+        margin-top: 2%;
+    }
+    
+    .cont-button2{
+        height: 40%;
+        max-height: 40%;
+        width: 90%;
+        min-width: 90%;
+        margin-top: 2%;
+    }
+    
+    .cont-button2, .cont-info2{
+        width: 40%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    /*-------------------------------*/
+    
+    /*---------vst-encriptador-----------*/
+    .vst-encriptador{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-vst-enc{
+        width: 85%;
+        height: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*-----------vst1-------------*/
+    .cont-figura{
+        display: none;
+    }
+    
+    
+    .cont-text{
+        height: 70%;
+        width: 80%;
+        margin: auto;
+    }
+    
+    p,span{
+        margin-top: 3.5%;
+    }
+    
+    .cont-vst1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cont-vst1{
+        display: none;
+    }
+    /*----------------------------*/
+    
+    /*-----------vst2-------------*/
+    .cont-vst2{
+        height: 96%;
+        width: 100%;
+    }
+    
+    .cont-textarea2{
+        height: 80%;
+        width: 90%;
+    }
+    
+    .cont-copy{
+        height: 20%;
+        width: 90%;
+    }
+    
+    .cont-vst2{
+        display: block;
+    }
+    /*----------------------------*/
+    
+    /*-------------------------------*/
+
+
+
+
+/*-------------------------------*/
+
+}
