@@ -1,6 +1,5 @@
 Copiar.addEventListener('click', () => {
-    console.log('hola');
-    let content = document.getElementById('mostrar-text');
+    let content = document.getElementById('textarea2');
     content.select();
     document.execCommand('copy');
 });
