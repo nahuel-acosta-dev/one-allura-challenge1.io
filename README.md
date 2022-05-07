@@ -2,7 +2,8 @@
 Challenge 1 del temario lógica de programación del Programa Oracle next generación + Alura. 
 
 # Caracteristicas
-El proyecto cuenta con una interfaz simple y comoda a la vez. Con el boton encriptar se encripta y con el descencriptar se hace lo contrario.
+El proyecto cuenta con una interfaz simple y comoda a la vez. 
+Con el boton encriptar se encripta y con el descencriptar se hace lo contrario.
 El proyecto se encuentra actualmente adaptado tanto para computador como para dispositivos moviles.
 
 # Acerca del proyecto
