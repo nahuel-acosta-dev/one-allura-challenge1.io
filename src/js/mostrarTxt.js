@@ -1,3 +1,7 @@
+
+/*Al precionar el boton encriptar o descencriptar, se hace desaparecer el contenido
+del cont-vst1, tanto figura como texto
+*/
 const mostrarTxt = (txt) =>{
     let figura = document.querySelector("#cont-vst1");
     let texto = document.querySelector("#textarea2");
