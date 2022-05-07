@@ -9,7 +9,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size:1em;
-    font-weight:100;
+    font-weight:400;
     background-color: #EFF1FA;
     width: 100vw;
     height:100vh;
@@ -169,6 +169,8 @@ textarea{
     margin-right: auto;
 }
 
+
+
 .cont-info2{
     background-color: transparent;
 }
@@ -246,6 +248,10 @@ textarea{
     text-align: center;
 }
 
+p,span{
+    font-weight: 700;
+}
+
 .cont-copy{
     height: 10%;
     width: 90%;
@@ -271,6 +277,28 @@ textarea{
 .cont-vst2{
     display: none;
 }
+/*------------animacion----------------*/
+
+.cont-vst1{
+    animation: mostrarX 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+
+@keyframes mostrarX {
+    0% {
+        translate: (40px, 80px);
+        transform: translate(-140px);
+        opacity: 0.0;
+    }
+
+    100%{
+        opacity: 0.7;
+    }
+}
+
+/*--------------------------*/
+
 /*----------------------------*/
 
 /*-------------------------------*/
@@ -291,7 +319,7 @@ body{
 }
 
 header{
-    height: 15vh;
+    height: 13vh;
     width: 100%;
 }
 
@@ -310,7 +338,6 @@ section:nth-child(2){
 /*---------fnc-encriptador-----------*/
 
 .cont-form{
-    background-color: pink;
     width: 90%;
     height: 90%;
 }
@@ -320,9 +347,18 @@ section:nth-child(2){
     height: 80%;
     font-size: 1em;
 }
-
+.cont-info{
+    width: 90%;
+}
 .cont-buttons{
-    height: 20%;
+    height: 15%;
+    width: 90%;
+}
+.cont-button1{
+    height: 100%;
+}
+.cont-button2{
+    height: 100%;
 }
 
 /*-------------------------------*/
@@ -365,9 +401,6 @@ p,span{
     justify-content: center;
 }
 
-.cont-vst1{
-    /*display: none;*/
-}
 /*----------------------------*/
 
 /*-----------vst2-------------*/
@@ -377,18 +410,22 @@ p,span{
 }
 
 .cont-textarea2{
-    height: 80%;
+    height: 70%;
     width: 90%;
 }
 
 .cont-copy{
-    height: 20%;
+    height: 30%;
     width: 90%;
 }
 
 .cont-vst2{
     display: none;
 }
+
+/*----------animacion-----*/
+
+/*-----------------------*/
 /*----------------------------*/
 
 /*-------------------------------*/
@@ -406,7 +443,7 @@ p,span{
     }
     
     header{
-        height: 14.9vh;
+        height: 11vh;
         width: 100%;
     }
     
@@ -420,12 +457,19 @@ p,span{
         height: 25vh;
     }
     
+
+
     /*-------------------------------*/
     
+
+    .cont-logo{
+        margin-left: 10px;
+    }
+
     /*---------fnc-encriptador-----------*/
     
+    
     .cont-form{
-        background-color: pink;
         width: 90%;
         height: 90%;
     }
@@ -528,7 +572,8 @@ p,span{
     }
     
     .cont-vst1{
-        display: none;
+        display: block;
+        margin-top: 10%;
     }
     /*----------------------------*/
     
@@ -539,17 +584,17 @@ p,span{
     }
     
     .cont-textarea2{
-        height: 80%;
+        height: 70%;
         width: 90%;
     }
     
     .cont-copy{
-        height: 20%;
+        height: 30%;
         width: 90%;
     }
     
     .cont-vst2{
-        display: block;
+        display: none;
     }
     /*----------------------------*/
     
