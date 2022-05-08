@@ -4,7 +4,7 @@ const Desencriptador = document.querySelector('#btn-desencriptador');
 const Copiar = document.querySelector('#btn-copiar');
 
 
-/*Sirve en la funcion descencriptar*/
+/*Sirve en la funcion desencriptar*/
 const REGP = {
     ai: new RegExp('ai', 'g'),
     enter: new RegExp('enter', 'g'),
