@@ -3,7 +3,7 @@ y se van reemplazando los letras a encriptar por las palabras que necesitemos("a
 
 Encriptador.addEventListener('click', event => {
     event.preventDefault();
-    let text = Form.elements['textarea1'].value;
+    let text = Form.elements['textarea1'].value.toLowerCase();
     let encriptar = '';
 
     for(let i = 0;i < text.length;i++) {
